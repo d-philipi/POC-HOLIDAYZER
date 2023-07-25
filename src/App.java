@@ -1,34 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        String[] listDates = new String[]{
-            "01/01/2023",
-            "21/02/2023",
-            "17/04/2023",
-            "21/04/2023",
-            "01/05/2023",
-            "08/06/2023",
-            "07/09/2023",
-            "12/10/2023",
-            "02/11/2023",
-            "15/11/2023",
-            "25/12/2023"
-        };
-        String[] listNames = new String[]{
-            "Confraternização mundial",
-            "Carnaval",
-            "Páscoa",
-            "Tiradentes",
-            "Dia do trabalho",
-            "Corpus Christi",
-            "Independência do Brasil",
-            "Nossa Senhora Aparecida",
-            "Finados",
-            "Proclamação da República",
-            "Natal"
-        };
-        Holiday[] listHolidays = new Holiday[11];
-        for(int i = 0; i < 11; i++){
+        Holidays holidays = new Holidays();
 
-        }
+        //holidays.getAllHolidays();
+
+        String holiday = holidays.getDate("01/02/2023");
+
+        System.out.println(holiday);
+
     }
 }
